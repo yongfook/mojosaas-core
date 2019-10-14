@@ -1,0 +1,334 @@
+@import "mixins.scss";
+body {
+	color: #000;
+	background: #FFF;
+	.animated {
+	  -webkit-animation-duration: 0.5s;
+	  -moz-animation-duration: 0.5s;
+	  -o-animation-duration: 0.5s;
+	  animation-duration: 0.5s;
+	}
+	a {
+		color: $apple_blue;
+	}
+	span.tag.new {
+		background: $apple_red;
+		color: #FFF;
+	}
+	span.tag.discount {
+		background: $apple_green;
+		color: #FFF;
+	}
+	.button.is-primary {
+		background-color: $apple_blue;
+		&:hover {
+			background-color: $apple_blue;
+		} 
+	}
+	.button.is-primary[disabled] {
+		background-color: $apple_blue;
+		opacity: 0.5;
+	}
+	.button.is-danger {
+		background-color: $apple_red;
+		&:hover {
+			background-color: $apple_red;
+		} 
+	}
+	.button.is-positive {
+		background-color: $apple_green;
+		&:hover {
+			background-color: $apple_green;
+		} 
+	}
+	.dropdown {
+		a.is-danger {
+			color: $apple_red;
+		}
+	}
+	h1.is-danger, h2.is-danger {
+		color: $apple_red;
+	}
+	.free_trial_text {
+		color: $apple_green;
+		font-weight: 600;
+	}
+	.dropdown-item.dropdown_title {
+		font-weight: 600;
+	}
+	.dropdown-trigger {
+		cursor: pointer;
+	}
+	.dropdown-item {
+		span.new {
+			background: $apple_red;
+			color: #FFF;
+			position: absolute;
+			height: 15px;
+			width: 15px;
+			background: $apple_red;
+			border-radius: 10px;
+			color: #FFF;
+			text-align: center;
+			line-height: 15px;
+			font-size: 9px;
+			margin: 3px 0 0 5px;
+		}
+	}
+	.mojo_container {
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 0 20px;
+		h2 {
+			font-weight: 600;
+			font-size: 28px;
+			padding-bottom: 20px;
+		}
+		p.subheading {
+			margin-top: -14px;
+			padding-bottom: 20px;
+			position: relative;
+			z-index: 100;
+		}
+	}
+	.free_trial_notice {
+		font-weight: 600;
+		color: $apple_green;
+		font-size: 12px;
+		padding-top: 2px;
+		a {
+			color: $apple_green;
+		}
+	}
+	.mojo_header {
+		padding: 30px;
+		padding-bottom: 50px;
+		position: relative;
+		z-index: 1000;
+		.level {
+			.level-item {
+				margin: 0;
+			}
+			.level-right {
+				.level-item {
+					margin-left: 20px;
+				}
+			}
+			.level-left {
+				.level-item {
+					margin-right: 20px;
+					h1 {
+						font-weight: 600;
+						font-size: 20px;
+						a {
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+		img {
+			display: block;
+			&.logo {
+				height: 25px;
+
+			}
+		}
+		.hamburger {
+			position: relative;
+			.notification_badge {
+				position: absolute;
+				height: 15px;
+				width: 15px;
+				background: $apple_red;
+				border-radius: 10px;
+				top: -6px;
+				right: -7px;
+				color: #FFF;
+				text-align: center;
+				line-height: 15px;
+				font-size: 9px;
+			}
+			img {
+				width: 25px;
+				height: 25px;
+			}
+		}
+		.avatar {
+			img {
+				width: 35px;
+				height: 35px;
+				border-radius: 20px;
+				background: #EEE;
+			}
+		}
+	}
+
+	.item_admin_controls {
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		.dropdown-trigger {
+			img {
+				opacity: 0.2;
+				height: 25px;
+				display: block;
+			}
+		}
+	}
+
+	.general_slim_notice {
+		background: $apple_grey_background;
+		padding: 10px;
+		border-radius: 5px;
+		font-size: 13px;
+		margin-bottom: 15px;
+		color: $apple_grey_dark;
+		font-weight: 600;
+	}
+	.general_list {
+		border-bottom: 1px solid $apple_grey_lightest;
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.general_item {
+		border-top: 1px solid $apple_grey_lightest;
+		padding: 10px;
+		.level-right {
+			.level-item {
+				margin: 0 0 0 10px;
+			}
+		}
+		.avatar {
+			img {
+				width: 35px;
+				height: 35px;
+				border-radius: 20px;
+				background: #EEE;
+			}
+		}
+	}
+	.empty_content {
+		border: 2px solid $apple_grey_lightest;
+		background: $apple_grey_background;
+		padding: 50px 20px;
+		border-radius: 8px;
+		text-align: center;
+		font-size: 18px;
+		.cta {
+			padding-top: 20px;
+			a {
+				min-width: 200px;
+
+			}
+		}
+	}
+
+	.selectable_cards {
+		// padding: 15px 0 20px 0;
+		padding-bottom: 20px;
+		.card {
+			border-radius: 8px;
+		}
+		.plan_note {
+			text-align: center;
+			padding: 20px;
+			padding-top: 10px;
+		}
+		.selectable_card {
+			min-height: 150px;
+			padding: 20px;
+			border-radius: 8px;
+			position: relative;
+			a {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+			&.selected {
+				box-shadow: 0 0 8px $apple_blue;
+			}
+			.card_title {
+				font-weight: 600;
+				font-size: 22px;
+				padding-bottom: 5px;
+			}
+			.card_subtitle {
+				font-weight: 600;
+				font-size: 16px;
+				margin-top: -4px;
+				padding-bottom: 8px;
+				color: $apple_grey_dark;
+				&.discounted {
+					color: $apple_green;
+				}
+			}
+			.cta {
+				padding-top: 20px;
+				text-align: center;
+				.button {
+					min-width: 200px;
+				}
+			}
+			ul {
+				font-size: 13px;
+				font-weight: 600;
+				color: $apple_grey_dark;
+				li {
+					margin-bottom: 5px;
+				}
+				span.check {
+					color: $apple_green;
+					font-weight: 600;
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+
+	.mojo_footer {
+		text-align: center;
+		color: $apple_grey_dark;
+		font-weight: 600;
+		font-size: 13px;
+		padding: 30px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+
+	body {
+		.selectable_cards {
+			.selectable_card {
+				min-height: 0;
+			}
+		}
+		.mojo_header {
+			padding: 20px;
+			.level {
+				.level-right {
+					.level-item {
+						margin-left: 15px;
+					}
+				}
+				.level-left {
+					.level-item {
+						margin-right: 15px;
+						h1 {
+							max-width: 210px;
+							white-space: nowrap; 
+							overflow: hidden;
+							text-overflow: ellipsis;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
