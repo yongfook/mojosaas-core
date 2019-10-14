@@ -1,4 +1,6 @@
-# mojosaas-core
+# Mojosaas Core
+
+A package of css / js that I'm reusing across different projects. Made this public because Heroku doens't allow me to push private repo submodules! Plus it's just some static assets which are "publicly viewable" anyway ;)
 
 ```
 git submodule add -b master https://github.com/yongfook/mojosaas-core.git
