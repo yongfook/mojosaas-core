@@ -11,13 +11,22 @@ git checkout master
 In `app/assets/javascripts/application.js`
 
 ```
-//= require_tree ../../../mojosaas-core/javascripts/
 //= require_tree ../../../mojosaas-core/vendor/javascripts/
+//= require_tree ../../../mojosaas-core/javascripts/
 ```
 
 In `app/assets/stylesheets/application.scss`
 
 ```
- *= require_tree ../../../vendor/assets/stylesheets/
- *= require_tree ../../../vendor/assets/vendor/stylesheets/
+ *= require_tree ../../../mojosaas-core/vendor/stylesheets/
+ *= require_tree ../../../mojosaas-core/stylesheets/
+```
+
+In `config/application.rb`
+
+```
+config.assets.paths << Rails.root.join("mojosaas-core", "javascripts")
+config.assets.paths << Rails.root.join("mojosaas-core", "stylesheets")
+config.assets.paths << Rails.root.join("mojosaas-core", "vendor", "javascripts")
+config.assets.paths << Rails.root.join("mojosaas-core", "vendor", "stylesheets")
 ```
