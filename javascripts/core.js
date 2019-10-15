@@ -1,5 +1,9 @@
 function bind_global_events() {
 
+	if ($('.form_progress_container').length) {
+		$('.form_progress').animate({width: $('.form_progress').attr('data-width')})
+	}
+
 	$('.dropdown-trigger').off('click tap').on('click tap', function(){
 		$('.dropdown').not($(this).parents('.dropdown')).removeClass('is-active')
 		$(this).parents('.dropdown').toggleClass('is-active')

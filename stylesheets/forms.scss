@@ -1,5 +1,22 @@
 @import "mixins.scss";
 body {
+	.form_progress_container {
+	  height: 12px;
+	  border-radius: 18px;
+	  background: #EBEBEB;
+	  margin-bottom: 5px;
+	  .form_progress {
+	    height: 12px;
+	    border-radius: 18px;
+	    background: #4CD964;
+	    width: 1px;
+	  }
+	}
+	.level.form_progress_labels {
+		color: #A1A1A1;
+		font-size: 12px;
+		padding-top: 1px;
+	}
 	form {
 		color: #000;
 		.select select {
@@ -7,6 +24,9 @@ body {
 		}
 		.form_errors {
 			color: #CC0000;
+			border: 2px solid #CC0000;
+			padding: 5px 8px;
+			margin-bottom: 20px;
 		}
 		.is-checkradio[type="radio"] + label, .is-checkradio[type="checkbox"] + label {
 			margin: 0;
