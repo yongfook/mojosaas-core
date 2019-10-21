@@ -107,6 +107,9 @@ body {
 			.control {
 				p.explain {
 					margin-top: -0.25rem;
+					&.disabled {
+						text-decoration: line-through;
+					}
 				}
 			}
 		}

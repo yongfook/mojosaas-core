@@ -14,6 +14,10 @@ function bind_global_events() {
 		$(this).parents('.dropdown').toggleClass('is-active')
 	})
 
+	// $('form .actions input.button').on('click tap', function(){
+	// 	$(this).addClass('is-loading')
+	// })
+
 	if ($('canvas#canvas.confetti_container').length) {
 		SetGlobals();
 		// InitializeButton();
@@ -38,6 +42,12 @@ function bind_global_events() {
 		name = $(this)[0].files[0].name
 		$(this).parents('.filepicker').find('span.file-name').text(name)
 	});
+
+	$('a.delete_attachment').off('click tap').on('click tap', function(){
+		$(this).parents('.field').find('.filepicker').addClass('disabled')
+		$(this).parents('.field').find('span.file-name').text('')
+	})
+
 	$('.upgrade_button').on('click', function() {
 		$(this).addClass('is-loading')
 	})
