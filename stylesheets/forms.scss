@@ -74,6 +74,11 @@ body {
 		.field.check_box {
 			padding: 0.3rem 0;
 		}
+		.filepicker {
+			&.disabled {
+				opacity: 0.5;
+			}
+		}
 		.actions {
 			padding-top: 30px;
 			input.button {
