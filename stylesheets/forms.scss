@@ -6,6 +6,10 @@ body {
 		margin-bottom: -1px;
 		.form_toggle_content {
 			display: none;
+			select, .input, .file {
+				min-width: 200px;
+				max-width: 450px;
+			}
 		}
 		&.opened {
 			.form_toggle_control a {
@@ -15,7 +19,9 @@ body {
 			.form_toggle_content {
 				display: block;
 				padding: 20px;
-				background: $apple_grey_lightest_50;
+				border-top: 1px dashed $apple_grey_light;
+
+				// background: $apple_grey_background;
 			}
 		}
 		.form_toggle_control a {
@@ -91,6 +97,13 @@ body {
 		}
 		.advanced_controls {
 			display: none;
+		}
+		.field {
+			.control {
+				p.explain {
+					margin-top: -0.25rem;
+				}
+			}
 		}
 	}
 }
