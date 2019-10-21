@@ -1,5 +1,10 @@
 function bind_global_events() {
 
+	$('.form_toggle_control a').off('click tap').on('click tap', function(){
+		$('.form_toggle_section').not($(this).parents('.form_toggle_section')).removeClass('opened')
+		$(this).parents('.form_toggle_section').toggleClass('opened')
+	})
+
 	if ($('.form_progress_container').length) {
 		$('.form_progress').animate({width: $('.form_progress').attr('data-width')})
 	}

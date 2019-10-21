@@ -1,5 +1,39 @@
 @import "mixins.scss";
 body {
+	.form_toggle_section {
+		border-top: 1px solid $apple_grey_lightest;
+		border-bottom: 1px solid $apple_grey_lightest;
+		margin-bottom: -1px;
+		.form_toggle_content {
+			display: none;
+		}
+		&.opened {
+			.form_toggle_control a {
+				opacity: 1;
+				background-image: asset-data-url('chevron-up.svg');
+			}
+			.form_toggle_content {
+				display: block;
+				padding: 20px;
+				background: $apple_grey_lightest_50;
+			}
+		}
+		.form_toggle_control a {
+			opacity: 0.3;
+			display: block;
+			padding: 20px;
+			color: #000;
+			font-size: 18px;
+			font-weight: 700;
+			background-image: asset-data-url('chevron-down.svg');
+			background-position: right 20px top 50%;
+			background-size: auto 37%;
+			background-repeat: no-repeat;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
 	.form_progress_container {
 	  height: 12px;
 	  border-radius: 18px;
