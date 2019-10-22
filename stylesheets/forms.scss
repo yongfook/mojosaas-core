@@ -20,7 +20,13 @@ body {
 				display: block;
 				padding: 20px;
 				border-top: 1px dashed $apple_grey_light;
-
+				.form_toggle_content_intro {
+					ul {
+						list-style-type: disc;
+						margin-left: 1.2em;
+						margin-bottom: 1em;
+					}
+				}
 				// background: $apple_grey_background;
 			}
 		}
