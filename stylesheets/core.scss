@@ -100,6 +100,18 @@ body {
 			color: $apple_green;
 		}
 	}
+	.free_trial_notice_banner {
+		background: $apple_green;
+		padding: 12px 8px;
+		color: #FFF;
+		font-weight: 700;
+		text-align: center;
+		font-size: 13px;
+		a {
+			color: #FFF;
+			text-decoration: underline;
+		}
+	}
 	.mojo_header {
 		padding: 30px;
 		padding-bottom: 50px;
