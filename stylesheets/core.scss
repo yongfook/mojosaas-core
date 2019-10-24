@@ -141,7 +141,7 @@ body {
 			color: $apple_green;
 		}
 	}
-	.free_trial_notice_banner {
+	.free_trial_notice_banner, .subtle_notice_banner {
 		background: $apple_green;
 		padding: 12px 8px;
 		color: #FFF;
@@ -150,6 +150,14 @@ body {
 		font-size: 13px;
 		a {
 			color: #FFF;
+			text-decoration: underline;
+		}
+	}
+	.subtle_notice_banner {
+		background: $apple_grey_background;
+		color: #000;
+		a {
+			color: $apple_blue;
 			text-decoration: underline;
 		}
 	}
