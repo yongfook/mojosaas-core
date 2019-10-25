@@ -13,7 +13,7 @@ body {
 		}
 		&.opened {
 			.form_toggle_control a {
-				opacity: 1;
+				color: #000;
 				background-image: asset-data-url('chevron-up.svg');
 			}
 			.form_toggle_content {
@@ -31,18 +31,18 @@ body {
 			}
 		}
 		.form_toggle_control a {
-			opacity: 0.3;
+			// opacity: 0.3;
 			display: block;
 			padding: 20px;
-			color: #000;
-			font-size: 18px;
+			color: $apple_blue;
+			font-size: 22px;
 			font-weight: 700;
 			background-image: asset-data-url('chevron-down.svg');
 			background-position: right 20px top 50%;
 			background-size: auto 37%;
 			background-repeat: no-repeat;
 			&:hover {
-				opacity: 1;
+				color: #000;
 			}
 		}
 	}
