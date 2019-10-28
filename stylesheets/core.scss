@@ -65,6 +65,11 @@ body {
 		&:hover {
 			background-color: $apple_blue;
 		} 
+		&.is-outlined, &.is-outlined:hover {
+			border-color: $apple_blue;
+			color: $apple_blue;
+			background-color: #FFF;
+		}
 	}
 	.button.is-primary[disabled] {
 		background-color: $apple_blue;
