@@ -75,6 +75,11 @@ body {
 		&:hover {
 			background-color: $apple_red;
 		} 
+		&.is-outlined, &.is-outlined:hover {
+			border-color: $apple_red;
+			color: $apple_red;
+			background-color: #FFF;
+		}
 	}
 	.button.is-positive {
 		background-color: $apple_green;
