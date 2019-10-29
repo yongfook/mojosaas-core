@@ -14,6 +14,14 @@ function bind_global_events() {
 		$(this).parents('.dropdown').toggleClass('is-active')
 	})
 
+	$('.tabs li a').off('click tap').on('click tap', function(){
+		tab = $(this).attr('data-tab')
+		$('.tabbed_content_box').removeClass('open')
+		$('.tabbed_content_box#' + tab).addClass('open')
+		$('.tabs li').removeClass('is-active')
+		$(this).parents('li').addClass('is-active')
+	})
+
 	// $('form .actions input.button').on('click tap', function(){
 	// 	$(this).addClass('is-loading')
 	// })
