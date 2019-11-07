@@ -151,25 +151,44 @@ body {
 			color: $apple_green;
 		}
 	}
-	.free_trial_notice_banner, .subtle_notice_banner {
+	.free_trial_notice_banner, .subtle_notice_banner, #starburst-announcement {
 		background: $apple_green;
 		padding: 12px 8px;
 		color: #FFF;
 		font-weight: 700;
 		text-align: center;
 		font-size: 13px;
+		position: relative;
 		a {
 			color: #FFF;
 			text-decoration: underline;
 		}
+		a#starburst-close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 50px;
+			overflow: hidden;
+			text-indent: -100px;
+			background-image: asset-data-url('times.svg');
+			background-position: 50% 50%;
+			background-size: auto 55%;
+			background-repeat: no-repeat;
+			opacity: 0.5;
+		}
 	}
-	.subtle_notice_banner {
+	.subtle_notice_banner, #starburst-announcement {
 		background: $apple_grey_background;
 		color: #000;
 		a {
 			color: $apple_blue;
 			text-decoration: underline;
 		}
+	}
+	#starburst-announcement {
+		background: $apple_yellow;
+
 	}
 	.mojo_header {
 		padding: 30px;
