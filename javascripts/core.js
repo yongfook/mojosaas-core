@@ -1,4 +1,4 @@
-function bind_global_events() {
+function bind_core_events() {
 
 	$('.form_toggle_control a').off('click tap').on('click tap', function(){
 		$('.form_toggle_section').not($(this).parents('.form_toggle_section')).removeClass('opened')
@@ -15,12 +15,20 @@ function bind_global_events() {
 	})
 
 	$('.tabs li a').off('click tap').on('click tap', function(){
-		tab = $(this).attr('data-tab')
-		$('.tabbed_content_box').removeClass('open')
-		$('.tabbed_content_box#' + tab).addClass('open')
-		$('.tabs li').removeClass('is-active')
-		$(this).parents('li').addClass('is-active')
+		if ($(this).parents('.tabs').hasClass('pricing_toggle')) {
+			$('.tabs li').removeClass('is-active')
+			$(this).parents('li').addClass('is-active')
+			$('.pricingtable').removeClass('monthly annual')
+			$('.pricingtable').addClass($(this).parents('li').attr('data-tab'))
+		} else {
+			var tab = $(this).attr('data-tab')
+			$('.tabbed_content_box').removeClass('open')
+			$('.tabbed_content_box#' + tab).addClass('open')
+			$('.tabs li').removeClass('is-active')
+			$(this).parents('li').addClass('is-active')
+		}
 	})
+
 
 	// $('form .actions input.button').on('click tap', function(){
 	// 	$(this).addClass('is-loading')
@@ -80,5 +88,5 @@ function bind_global_events() {
 }
 
 $(document).on('turbolinks:load',function(event){
-	bind_global_events()
+	bind_core_events()
 })
