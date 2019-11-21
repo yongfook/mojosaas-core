@@ -16,6 +16,9 @@ body {
 				color: #000;
 				background-image: asset-data-url('chevron-up.svg');
 			}
+			.dependent_controls.off {
+				opacity: 0.4;
+			}
 			.form_toggle_content {
 				display: block;
 				padding: 20px;
