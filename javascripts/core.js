@@ -1,5 +1,13 @@
 function bind_core_events() {
 
+	$('.open_modal').on('click tap', function(){
+		$('.modal').addClass('is-active')
+	})
+
+	$('[aria-label=close]').off('click tap').on('click tap', function(){
+		$('.modal').removeClass('is-active')
+	})
+
 	$('.form_toggle_control a').off('click tap').on('click tap', function(){
 		$('.form_toggle_section').not($(this).parents('.form_toggle_section')).removeClass('opened')
 		$(this).parents('.form_toggle_section').toggleClass('opened')

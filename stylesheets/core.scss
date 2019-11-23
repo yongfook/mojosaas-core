@@ -126,6 +126,12 @@ body {
 			margin: 3px 0 0 5px;
 		}
 	}
+	.modal {
+		z-index: 1000;
+		.modal-background {
+			// background-color: rgba(0,0,0,0.9);
+		}
+	}
 	.mojo_container {
 		max-width: 980px;
 		margin: 0 auto;
