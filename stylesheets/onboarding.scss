@@ -1,0 +1,45 @@
+@import "mixins.scss";
+body {
+	.onboarding_container {
+		background: #FFF;
+		padding: 50px;
+		position: relative;
+		a.delete {
+			position: absolute;
+			right: 30px;
+			top: 30px;
+		}
+		img.logomark {
+			display: block;
+			margin: 0 auto;
+			height: 3rem;
+		}
+		text-align: center;
+		h1 {
+			font-size: 2rem;
+			font-weight: 700;
+			padding: 1rem 0;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+		form, table.table {
+			margin-top: 2rem;
+			input[type=submit] {
+				min-width: 150px;
+			}
+		}
+		.spinner, .onboarding_step {
+			display: none;
+		}
+		.onboarding_step.step1 {
+			display: block;
+		}
+		table.table {
+			margin-bottom: 2rem;
+		}
+		// table.table span.tag {
+		// 	display: none;
+		// }
+	}
+}
