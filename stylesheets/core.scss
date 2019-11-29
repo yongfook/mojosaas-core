@@ -206,6 +206,7 @@ body {
 		text-align: center;
 		font-size: 13px;
 		position: relative;
+		z-index: 1000;
 		a {
 			color: #FFF;
 			text-decoration: underline;
@@ -225,9 +226,13 @@ body {
 			opacity: 0.5;
 		}
 	}
+	.free_trial_notice_banner {
+		background: $apple_red;
+	}
 	.subtle_notice_banner, #starburst-announcement {
 		background: $apple_grey_background;
 		color: #000;
+		border-bottom: 1px solid $apple_grey_light;
 		a {
 			color: $apple_blue;
 			text-decoration: underline;
