@@ -23,6 +23,12 @@ body {
 		p {
 			font-size: 1.5rem;
 		}
+		p.cannot_auto_detect {
+			display: none;
+			font-size: 1rem;
+			margin-bottom: 1.25rem;
+			margin-top: -0.75rem;
+		}
 		form, table.table {
 			margin-top: 2rem;
 			input[type=submit] {
@@ -41,6 +47,9 @@ body {
 		.alternative_cta {
 			font-size: 1rem;
 			padding-top: 2rem;
+		}
+		a.onboarding_finished {
+			min-width: 450px;
 		}
 		// table.table span.tag {
 		// 	display: none;
