@@ -60,12 +60,15 @@ body {
 		background: $apple_green;
 		color: #FFF;
 	}
-	.button.is-primary {
+	.button.is-primary, .button.is-primary {
 		background-color: $apple_blue;
-		&:hover {
+		&:hover, &:active, &:focus {
 			background-color: $apple_blue;
 		} 
-		&.is-outlined, &.is-outlined:hover {
+		// &:focus {
+	 //    outline: none !important;
+		// }
+		&.is-outlined, &.is-outlined:hover, &.is-outlined:active, &.is-outlined:focus {
 			border-color: $apple_blue;
 			color: $apple_blue;
 			background-color: #FFF;
@@ -77,10 +80,10 @@ body {
 	}
 	.button.is-danger {
 		background-color: $apple_red;
-		&:hover {
+		&:hover, &:active, &:focus {
 			background-color: $apple_red;
 		} 
-		&.is-outlined, &.is-outlined:hover {
+		&.is-outlined, &.is-outlined:hover, &.is-outlined:active, &.is-outlined:focus {
 			border-color: $apple_red;
 			color: $apple_red;
 			background-color: #FFF;
@@ -88,7 +91,7 @@ body {
 	}
 	.button.is-positive {
 		background-color: $apple_green;
-		&:hover {
+		&:hover, &:active, &:focus {
 			background-color: $apple_green;
 		} 
 	}
