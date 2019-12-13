@@ -1,5 +1,70 @@
 @import "mixins.scss";
 body {
+	.free_plan_usage {
+		border-bottom: 1px solid $apple_grey_light;
+		box-shadow: 0 5px 8px 0 rgba(0,0,0,0.08);
+		background: #FFF;
+		.level-item {
+			border-right: 1px solid $apple_grey_lightest;
+			padding: 0 30px;
+			height: 60px;
+			margin: 0 !important; 
+			&.progress_item {
+				padding-right: 0;
+				border-right: none;
+			}
+			&.progress_item_count {
+				padding-left: 15px;
+				font-size: 10px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				.tooltip:before {
+					letter-spacing: 0;
+					text-transform: none;
+				}
+				span {
+					top: 0.5px;
+					position: relative;
+					border-bottom: 1px dotted #FFF;
+				}
+				span.tooltip {
+					cursor: pointer;
+					border-bottom: 1px dotted $apple_grey_light;
+				}
+			}
+		}
+		.level-right {
+			.level-item {
+				border: none;
+			}
+		}
+		.free_plan_progress_bar {
+			height: 8px;
+			width: 100px;
+			border-radius: 20px;
+			background: $apple_green;
+			overflow: hidden;
+			position: relative;
+			&.near_quota {
+				background: $apple_red;
+				.progress {
+					background: $apple_red;
+				}
+			}
+			.progress_overlay {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background: rgba(255,255,255,0.8);
+			}
+			.progress {
+				position: absolute;
+				height: 100%;
+				background: $apple_green;
+				z-index: 100;
+			}
+		}
+	}
 	.onboarding_container {
 		background: #FFF;
 		padding: 50px;
