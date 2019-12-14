@@ -1,5 +1,8 @@
 @import "mixins.scss";
 body {
+	.modal {
+		z-index: 10001;
+	}
 	.free_plan_usage {
 		border-bottom: 1px solid $apple_grey_light;
 		box-shadow: 0 5px 8px 0 rgba(0,0,0,0.08);
