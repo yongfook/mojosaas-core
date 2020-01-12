@@ -5,10 +5,12 @@ body {
 	}
 	.free_plan_usage {
 		// border-bottom: 1px solid $apple_grey_light;
-		box-shadow: 0 5px 8px 0 rgba(0,0,0,0.08);
+		// box-shadow: 0 5px 8px 0 rgba(0,0,0,0.08);
 		background: #FFF;
+		border-bottom: 1px solid $apple_grey_light;
+
 		.level-item {
-			border-right: 1px solid $apple_grey_lightest;
+			// border-right: 1px solid $apple_grey_lightest;
 			padding: 0 30px;
 			height: 60px;
 			margin: 0 !important; 

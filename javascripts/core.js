@@ -17,10 +17,10 @@ function bind_core_events() {
 		$('.form_progress').animate({width: $('.form_progress').attr('data-width')})
 	}
 
-	$('.dropdown-trigger').off('click tap').on('click tap', function(){
-		$('.dropdown').not($(this).parents('.dropdown')).removeClass('is-active')
-		$(this).parents('.dropdown').toggleClass('is-active')
-	})
+	// $('.dropdown-trigger').off('click tap').on('click tap', function(){
+	// 	$('.dropdown').not($(this).parents('.dropdown')).removeClass('is-active')
+	// 	$(this).parents('.dropdown').toggleClass('is-active')
+	// })
 
 	$('.tabs li a').off('click tap').on('click tap', function(){
 		if ($(this).parents('.tabs').hasClass('pricing_toggle')) {
